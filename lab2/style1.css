@@ -1,0 +1,49 @@
+body {
+    padding-top: 60px;
+}
+
+.box
+{
+    box-sizing: border-box;
+    display: inline-flex;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(221, 219, 219);
+    margin: 5px;
+    padding: 5px;
+}
+
+.box::before
+{
+    content: "\270C";
+}
+
+/* nav */
+
+.main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    background-color: #e3e3e3;
+    margin: 15px 0 0 15px;
+    z-index: 1000;
+}
+
+.main-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+.main-menu li:hover::before {
+  color: #007bff;
+}
